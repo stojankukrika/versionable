@@ -1,4 +1,8 @@
 # Versionable
+
+Tnx [Original project](https://github.com/mpociot/versionable) for start point and this project start point. 
+This project started as fork but because original user didn't update it we will make it better.
+
 ## Easy to use Model versioning for Laravel
 
 Keep track of all your model changes and revert to previous versions of it.
@@ -203,6 +207,7 @@ class MyModel extends Eloquent
 ```
 
 And do not forget to create a migration for this versions table, exactly as the default versions table.
+
 
 <a name="license" />
 
