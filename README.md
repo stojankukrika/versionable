@@ -125,7 +125,6 @@ The diff method takes a version model as an argument. This defines the version t
  */
 $diff = $page->previousVersion()->diff();
 
-
 /**
  * Create a diff against a specific version
  */
