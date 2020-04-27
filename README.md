@@ -15,8 +15,6 @@ $content->previousVersion()->revert();
 $oldModel = Version::find(100)->getModel();
 ```
 
-<a name="installation" />
-
 ## Installation
 
 In order to add Versionable to your project, just add 
@@ -38,8 +36,6 @@ Run the migrations to create the "versions" table that will hold all version inf
 php artisan migrate --path=vendor/mpociot/versionable/src/migrations	php artisan migrate
 ```	```
 
-<a name="usage" />
-
 ## Usage
 
 Let the Models you want to set under version control use the `VersionableTrait`.
@@ -56,8 +52,6 @@ That's it!
 Every time you update your model, a new version containing the previous attributes will be stored in your database. 
 
 All timestamps and the optional soft-delete timestamp will be ignored.
-
-<a name="exclude" />
 
 ### Exclude attributes from versioning
 
@@ -79,8 +73,6 @@ class User extends Model {
 }
 ```
 
-<a name="maximum" />
-
 ### Maximum number of stored versions
 
 You can control the maximum number of stored versions per model. By default, there will be no limit and all versions will be saved.
@@ -99,8 +91,6 @@ class User {
 }
 ```
 
-<a name="retrieve" />
-
 ### Retrieving all versions associated to a model
 
 To retrieve all stored versions use the `versions` attribute on your model.
@@ -110,8 +100,6 @@ This attribute can also be accessed like any other Laravel relation, since it is
 ```php
 $model->versions;
 ```
-
-<a name="diff" />
 
 ### Getting a diff of two versions
 
@@ -132,8 +120,6 @@ $diff = $page->currentVersion()->diff( $version );
 ```
 
 The result will be an associative array containing the attribute name as the key, and the different attribute value.
-
-<a name="revert" />
 
 ### Revert to a previous version
 
@@ -158,8 +144,6 @@ $revertedModel = Version::find( $version_id )->revert();
 
 ```
 
-<a name="disableVersioning" />
-
 ### Disable versioning
 
 In some situations you might want to disable versioning a specific model completely for the current request.
@@ -175,8 +159,6 @@ $user->update([
     'some_attribute' => 'changed value'
 ]);
 ```
-
-<a name="differentVersionTable" />
 
 ### Use different version table
 
@@ -206,9 +188,6 @@ class MyModel extends Eloquent
 ```
 
 And do not forget to create a migration for this versions table, exactly as the default versions table.
-
-
-<a name="license" />
 
 ## License
 
