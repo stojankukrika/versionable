@@ -1,7 +1,7 @@
 {
     "name": "stojankukrika/versionable",
     "license": "MIT",
-    "description": "Allows to create Laravel 4 / 5 / 6 / 7 Model versioning and restoring",
+    "description": "Allows to create Laravel 4 / 5 / 6 / 7 /8 Model versioning and restoring",
     "keywords": [
         "model",
         "laravel",
@@ -22,8 +22,8 @@
         "source": "https://github.com/stojankukrika/versionable"
     },
     "require": {
-        "php": "^7.1 || ^7.2 || ^7.3",
-        "illuminate/support": "~5.3 || ^6.0 || ^7.0"
+        "php": "^7.1 || ^7.2 || ^7.3" || ^7.4",
+        "illuminate/support": "~5.3 || ^6.0 || ^7.0" || ^8.0"
     },
     "require-dev": {
         "phpunit/phpunit": "7.* || ^8.0",
